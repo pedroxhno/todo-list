@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pochaevsk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+    --vermelho_claro: rgb(255, 53, 53);
+    --vermelho_escuro: rgb(177, 0, 0);
+    --azul_claro: rgb(157, 217, 255);
+    --cinza_claro: rgb(192, 192, 192);
+    --cinza_escuro: rgb(117, 117, 117);
+
+    --fonte_titulo: "Pochaevsk", system-ui;
+    --fonte_texto: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cinza_claro);
+}
+
+header > h1 {
+    font-family: var(--fonte_titulo);
+    text-align: center;
+}
+
+header > p {
+    font-family: var(--fonte_titulo);
+    text-align: center;
+}
+
+#itens_lista {
+    background-color: var(--cinza_escuro);
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;   /* bota uma barra de rolagem quando passa o limite */
+    padding-right: 20px; 
+}
+
+section > h2 {
+    font-family: var(--fonte_titulo);
+    text-align: center;
+    margin: 15px;
+}
+
+#lista li {
+    font-family: var(--fonte_texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px;
+    margin-bottom: 3x;
+    border-bottom: 1px solid #eee;
+}
+
+/* botão de remover */
+#lista li button {
+    background-color: var(--vermelho_claro);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lista li button:hover {
+    background-color: var(--vermelho_escuro);
+}
+
+#botoes  {
+    background-color: var(--cinza_escuro);
+    width: 520px;
+    height: 30px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#botoes > button {
+    font-family: var(--fonte_texto);
+}
+
+.concluido {
+    text-decoration: line-through; opacity: 0.6;
+}
+
+.btn_adicionar {
+    border-radius: 5px;
+    background-color: lightskyblue;
+    margin-left: 15px;
+}
+
+.btn_limpar {
+    border-radius: 5px;
+    background-color: var(--vermelho_escuro);
+    margin-left: 15px;
+}

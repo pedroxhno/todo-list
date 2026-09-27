@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            To Do List
+        </h1>
+        <p>
+            Clique nos itens para riscar
+        </p>
+    </header>
+
+    <section id="itens_lista">
+        <h2>
+            Lista de coisas
+        </h2>
+        <ul id="lista">
+            <li onclick="riscar_item(event)">
+                Jogar Free Fire 
+                <button onclick="remover_item(event)">X</button>
+            </li>
+        </ul>
+
+    </section>
+    <section id="botoes">
+        <button class="btn_adicionar" onclick="adicionar_item()">
+            Adicionar item
+        </button>
+        <button class="btn_limpar" onclick="limpar_lista()">
+            Limpar lista
+        </button>
+    </section>
+
+</body>
+</html>
