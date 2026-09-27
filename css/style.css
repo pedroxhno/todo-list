@@ -52,7 +52,7 @@ section > h2 {
     align-items: center;
     padding: 4px 6px;
     margin-bottom: 3x;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--cinza_claro);
 }
 
 /* botão de remover */
@@ -87,7 +87,7 @@ section > h2 {
 
 .btn_adicionar {
     border-radius: 5px;
-    background-color: lightskyblue;
+    background-color: var(--azul_claro);
     margin-left: 15px;
 }
 
